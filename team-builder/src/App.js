@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const[team, setTeam] = useState({
+    name: "Bill E. Bob",
+    email: "Somewhere@sea.wave",
+    role: "Official daydreamer"
+  })
+
   return (
     <div className="App">
       <header className="App-header">

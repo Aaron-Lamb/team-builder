@@ -13,11 +13,15 @@ function App() {
   }
 ])
 
+const addMember = newMember => {
+  setTeam([...team, newMember]);
+}
+
   return (
     <div className="App">
       <header className="App-header">
         <Members teamMember={team}/>
-        <TeamForm />
+        <TeamForm onSubmit={addMember}/>
       </header>
     </div>
   );

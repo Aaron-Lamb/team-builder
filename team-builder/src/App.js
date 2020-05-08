@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Members from './components/Member';
+import TeamForm from './components/TeamForm';
 
 function App() {
   const[team, setTeam] = useState([
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Members teamMember={team}/>
+        <TeamForm />
       </header>
     </div>
   );
